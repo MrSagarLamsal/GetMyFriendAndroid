@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OpeningWeb">
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:id="@+id/golink"
+    />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="facebook"
+        android:id="@+id/fblink"
+        android:layout_below="@id/golink"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="youtube"
+        android:id="@+id/youtubelink"
+        android:layout_toRightOf="@id/fblink"
+        android:layout_below="@id/golink"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="google"
+        android:id="@+id/googlelnk"
+        android:layout_toRightOf="@id/youtubelink"
+        android:layout_below="@id/golink"
+        />
+    <WebView
+        android:layout_below="@id/fblink"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:id="@+id/mybrowser"
+        />
+</RelativeLayout>

@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">GetMyFriendAndroid</string>
+
+
+    <string-array name="country">
+        <item>Nepal</item>
+        <item>Bnagla</item>
+        <item>China</item>
+    </string-array>
 </resources>
