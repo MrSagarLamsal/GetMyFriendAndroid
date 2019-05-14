@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Register with valid data"
+            android:textColor="#263238"
+            android:textSize="18dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/registerw"
+
+
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/Fname"
+            android:hint="First Name"
+            android:layout_below="@id/registerw"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/Lname"
+            android:hint="Last Name"
+            android:layout_below="@id/Fname"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/username"
+            android:hint="username"
+            android:layout_below="@id/Lname"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/passsword"
+            android:hint="password"
+            android:layout_below="@id/username"
+            android:inputType="textPassword"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/passsword"
+            android:text="Register"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:textColor="#01579b"
+            android:id="@+id/register"
+            />
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>

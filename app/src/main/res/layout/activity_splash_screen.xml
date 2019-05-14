@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/appMain"
     tools:context=".SplashScreen">
 <ImageView
     android:layout_width="match_parent"
@@ -11,4 +12,15 @@
     android:id="@+id/getMyfriendSplash"
     android:src="@drawable/getmyfriend"
     />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="NOW ON YOUR PHONE"
+        android:textColor="@color/appMainWord"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:gravity="bottom"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="40dp"
+        />
 </RelativeLayout>

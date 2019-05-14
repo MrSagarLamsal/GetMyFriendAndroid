@@ -1,27 +1,29 @@
 package com.bhawa.getmyfriendandroid;
 
+import android.support.design.widget.TabLayout;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.webkit.WebView;
-import android.widget.ArrayAdapter;
-import android.widget.AutoCompleteTextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    AutoCompleteTextView autoContry;
-    String[] country;
-
+    private ViewPager viewPager;
+    private TabLayout tabLayout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        tabLayout=findViewById(R.id.tabL);
+        viewPager=findViewById(R.id.viewPage);
+
+        ViewPagerAdapter adapter=new ViewPagerAdapter(getSupportFragmentManager());
+        adapter.addFragment(new Login(),"LOGIN");
+        adapter.addFragment(new Register(),"REGISTER");
+
+        viewPager.setAdapter(adapter);
+        tabLayout.setupWithViewPager(viewPager);
 
 
-        autoContry=findViewById(R.id.contryname);
-        country =getResources().getStringArray(R.array.country);
-        autoContry.setAdapter( new ArrayAdapter<String>(
-                this,R.layout.support_simple_spinner_dropdown_item,country
-        ));
     }
 }
