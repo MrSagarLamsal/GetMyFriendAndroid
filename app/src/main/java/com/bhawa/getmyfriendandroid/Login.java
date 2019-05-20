@@ -129,8 +129,14 @@ public class Login extends Fragment implements View.OnClickListener {
 
     }
 
+    private void onLoggedIn(GoogleSignInAccount account) {
+        Intent intent = new Intent(context, DashBoard.class);
+       // intent.putExtra(DashBoard.GOOGLE_ACCOUNT, account);
 
+        startActivity(intent);
+       // finish();
 
+    }
 
 
     @Override
